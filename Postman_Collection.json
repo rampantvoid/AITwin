@@ -1,0 +1,148 @@
+{
+    "info": {
+      "name": "Flask API Collection",
+      "_postman_id": "unique-id",
+      "description": "Collection for testing Flask API",
+      "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+      {
+        "name": "Text Request",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"text\": \"your input text\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://localhost:5000/text",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["text"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Voice Request",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "url": {
+            "raw": "http://localhost:5000/voice",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["voice"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "PDF Request",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {
+                "key": "file",
+                "type": "file",
+                "src": ""
+              }
+            ]
+          },
+          "url": {
+            "raw": "http://localhost:5000/pdf",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["pdf"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Image Request",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "raw",
+            "raw": "{\n  \"prompt\": \"your image prompt\"\n}",
+            "options": {
+              "raw": {
+                "language": "json"
+              }
+            }
+          },
+          "url": {
+            "raw": "http://localhost:5000/image",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["image"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Audio Request",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {
+                "key": "file",
+                "type": "file",
+                "src": ""
+              }
+            ]
+          },
+          "url": {
+            "raw": "http://localhost:5000/audio",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["audio"]
+          }
+        },
+        "response": []
+      },
+      {
+        "name": "Video Request",
+        "request": {
+          "method": "POST",
+          "header": [],
+          "body": {
+            "mode": "formdata",
+            "formdata": [
+              {
+                "key": "file",
+                "type": "file",
+                "src": ""
+              }
+            ]
+          },
+          "url": {
+            "raw": "http://localhost:5000/video",
+            "protocol": "http",
+            "host": ["localhost"],
+            "port": "5000",
+            "path": ["video"]
+          }
+        },
+        "response": []
+      }
+    ]
+  }
